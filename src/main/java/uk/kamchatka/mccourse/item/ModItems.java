@@ -16,6 +16,11 @@ public class ModItems {
                             66,
                             new Item.Properties().tab(ItemGroup.TAB_COMBAT)));
 
+    public static final RegistryObject<Item> LIGHTNING_INGOT =
+            Registration.ITEMS.register("lightning_ingot",
+                    () -> new Item(
+                            new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
+
     public static void register() {
         // We merely ned to hit this class so that static fields are initialised
         // and side effects are fired which is an awful design, but still
