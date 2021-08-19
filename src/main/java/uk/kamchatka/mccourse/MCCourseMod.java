@@ -16,6 +16,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import uk.kamchatka.mccourse.item.ModItems;
+import uk.kamchatka.mccourse.util.Registration;
 
 import java.util.stream.Collectors;
 
