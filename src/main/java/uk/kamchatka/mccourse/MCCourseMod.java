@@ -15,6 +15,7 @@ import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import uk.kamchatka.mccourse.block.ModBlocks;
 import uk.kamchatka.mccourse.item.ModItems;
 import uk.kamchatka.mccourse.util.Registration;
 
@@ -31,6 +32,7 @@ public class MCCourseMod
     public MCCourseMod() {
         Registration.register();
         ModItems.register();
+        ModBlocks.register();
 
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
